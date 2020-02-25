@@ -27,7 +27,7 @@ object ErrorHandler {
         "<h1 class=\"detailTitle\">Unable to find the file.</h1>"
       }
       case e: SAXParseException => {
-        "<h1 class=\"detailTitle\">Article contains invalid html.</h1>"
+        "<body><h1>Article contains invalid html.</h1></body>"
       }
       case e: IOException => {
         "<h1 class=\"detailTitle\">Unknown IO error</h1>"
